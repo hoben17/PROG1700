@@ -1,0 +1,5 @@
+name = input("Enter your name: ")
+age_text = input("Enter your age: ")
+age = int(age_text)   # convert string to int
+
+print(f"Hello {name}, next year you will be {age + 1} years old.")
