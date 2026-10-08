@@ -5,6 +5,7 @@
 
 temp = float(input("Enter the temperature (°C): "))
 percip_input = input("Is it raining? (Y or y): ")
+percip_input = bool
 
 if percip_input == "y" or "Y":
     precip_status = True
