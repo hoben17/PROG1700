@@ -1,0 +1,4 @@
+
+
+got the value error because an invalid entry. used a word instead of an int from 1-10
+you are getting the runtime error instead of the syntex error because it is from a value that you entered wrong

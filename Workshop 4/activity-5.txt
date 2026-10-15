@@ -1,0 +1,7 @@
+
+
+message when you guessed 3 was too high
+message when you guessed 8 was too low
+
+**Checkpoint:** Why did Python not report an exception for the original incorrect messages?
+because the code was entered correctly but it was just backwards
