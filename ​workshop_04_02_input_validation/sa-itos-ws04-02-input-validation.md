@@ -1,20 +1,21 @@
 # PROG 1700 — Logic and Programming
+
 ## Workshop 04-02 — Input Validation
 
 ### 1. Workshop Details
 
-| Field | Details |
-|---|---|
-| Course | PROG 1700 — Logic and Programming |
-| Instructor | Davis Boudreau |
-| Series | Workshop 04 — Error Handling (Part 2 of 4) |
-| Workshop | 04-02 — Input Validation |
-| Type | Self-guided, hands-on programming |
-| Estimated time | 75–90 minutes |
-| Tools | Python 3, VS Code, Git, GitHub |
-| Prerequisite | Workshop 04-01 — Understanding Errors & Debugging |
-| Submission | GitHub technical evidence and Brightspace worksheet/reflection |
-| Evaluation | A — Attendance; P — Participation; T — Task Progress; F — Focus & Professional Conduct; R — Reflection |
+| Field          | Details                                                                                                     |
+| -------------- | ----------------------------------------------------------------------------------------------------------- |
+| Course         | PROG 1700 — Logic and Programming                                                                          |
+| Instructor     | Davis Boudreau                                                                                              |
+| Series         | Workshop 04 — Error Handling (Part 2 of 4)                                                                 |
+| Workshop       | 04-02 — Input Validation                                                                                   |
+| Type           | Self-guided, hands-on programming                                                                           |
+| Estimated time | 75–90 minutes                                                                                              |
+| Tools          | Python 3, VS Code, Git, GitHub                                                                              |
+| Prerequisite   | Workshop 04-01 — Understanding Errors & Debugging                                                          |
+| Submission     | GitHub technical evidence and Brightspace worksheet/reflection                                              |
+| Evaluation     | A — Attendance; P — Participation; T — Task Progress; F — Focus & Professional Conduct; R — Reflection |
 
 ---
 
@@ -72,15 +73,15 @@ There are two different questions:
 - **Can the program interpret the input as the expected kind of data?** For this workshop, is it a string of digits representing a non-negative whole number?
 - **Does that number satisfy the application's rules?** For this game, is it between **1 and 10 inclusive**?
 
-| Input | Digits only? | Within 1–10? | Accept? |
-|---|---|---|---|
-| `"5"` | Yes | Yes | Yes |
-| `"0"` | Yes | No | No |
-| `"11"` | Yes | No | No |
-| `"hello"` | No | Not checked | No |
-| `"5.5"` | No | Not checked | No |
-| `"-2"` | No | Not checked | No |
-| `" 5 "` | No before trimming | Yes after trimming | Yes if trimmed |
+| Input       | Digits only?       | Within 1–10?      | Accept?        |
+| ----------- | ------------------ | ------------------ | -------------- |
+| `"5"`     | Yes                | Yes                | Yes            |
+| `"0"`     | Yes                | No                 | No             |
+| `"11"`    | Yes                | No                 | No             |
+| `"hello"` | No                 | Not checked        | No             |
+| `"5.5"`   | No                 | Not checked        | No             |
+| `"-2"`    | No                 | Not checked        | No             |
+| `" 5 "`   | No before trimming | Yes after trimming | Yes if trimmed |
 
 **Important:** `.isdigit()` is a beginner-friendly way to recognize digit-only strings, not a complete solution for all numeric input. It rejects negative numbers and decimals, which is suitable for this game. In later workshops you will learn other approaches, including exception handling.
 
@@ -129,7 +130,6 @@ Discuss or independently answer:
    ```bash
    cd workshop_04_02_input_validation
    ```
-
 7. Verify Python with `python --version`. On Windows you may use `py --version`; on macOS/Linux you may use `python3 --version`.
 8. Run the file using the command that works on your system:
 
@@ -179,7 +179,7 @@ else:
     print("Please enter a whole number using digits 0–9.")
 ```
 
-**PREDICT:** Decide what each input will produce: `5`, `hello`, `5.5`, `-2`, and ` 5 `.
+**PREDICT:** Decide what each input will produce: `5`, `hello`, `5.5`, `-2`, and `5`.
 
 **SAVE → RUN → OBSERVE:** Run the program separately for each value. The program should not crash for these inputs.
 
@@ -307,17 +307,17 @@ secret = 5
 
 This makes it possible to know the expected result in advance. **Restore the random-number statement after testing.**
 
-| Input | Expected output | Actual output | Pass/Fail |
-|---|---|---|---|
-| `hello` | Whole-number guidance; ask again | | |
-| `5.5` | Whole-number guidance; ask again | | |
-| `-2` | Whole-number guidance; ask again | | |
-| `0` | Out-of-range message; ask again | | |
-| `1` | Too low; ask again | | |
-| `10` | Too high; ask again | | |
-| `11` | Out-of-range message; ask again | | |
-| `5` | Winning message; game ends | | |
-| ` 5 ` | Winning message after trimming; game ends | | |
+| Input     | Expected output                           | Actual output | Pass/Fail |
+| --------- | ----------------------------------------- | ------------- | --------- |
+| `hello` | Whole-number guidance; ask again          |               |           |
+| `5.5`   | Whole-number guidance; ask again          |               |           |
+| `-2`    | Whole-number guidance; ask again          |               |           |
+| `0`     | Out-of-range message; ask again           |               |           |
+| `1`     | Too low; ask again                        |               |           |
+| `10`    | Too high; ask again                       |               |           |
+| `11`    | Out-of-range message; ask again           |               |           |
+| `5`     | Winning message; game ends                |               |           |
+| `5`     | Winning message after trimming; game ends |               |           |
 
 **Testing tip:** Run the program again as needed to test each case. When the secret is `5`, entering `5` ends that game.
 
@@ -334,13 +334,13 @@ This makes it possible to know the expected result in advance. **Restore the ran
 
 **Investigation record:**
 
-| Question | Your response |
-|---|---|
-| What should the program do? | |
-| What did it actually do? | |
-| Which condition caused the problem? | |
-| What correction did you make? | |
-| How did you prove it was fixed? | |
+| Question                            | Your response |
+| ----------------------------------- | ------------- |
+| What should the program do?         |               |
+| What did it actually do?            |               |
+| Which condition caused the problem? |               |
+| What correction did you make?       |               |
+| How did you prove it was fixed?     |               |
 
 ---
 
@@ -397,13 +397,13 @@ Answer in your own words:
 
 ### 12. Evaluation Criteria
 
-| Criterion | Evidence |
-|---|---|
-| **A — Attendance** | Present and engaged during workshop activities |
-| **P — Participation** | Predicts outcomes, performs experiments, and investigates unexpected behaviour |
-| **T — Task Progress** | Completes guided code, range validation, repeated input, testing, and independent challenge |
-| **F — Focus & Professional Conduct** | Follows instructions, troubleshoots systematically, and works respectfully |
-| **R — Reflection / Exit Evidence** | Explains validation logic, boundary testing, and the debugging investigation |
+| Criterion                                   | Evidence                                                                                    |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| **A — Attendance**                   | Present and engaged during workshop activities                                              |
+| **P — Participation**                | Predicts outcomes, performs experiments, and investigates unexpected behaviour              |
+| **T — Task Progress**                | Completes guided code, range validation, repeated input, testing, and independent challenge |
+| **F — Focus & Professional Conduct** | Follows instructions, troubleshoots systematically, and works respectfully                  |
+| **R — Reflection / Exit Evidence**   | Explains validation logic, boundary testing, and the debugging investigation                |
 
 ---
 
