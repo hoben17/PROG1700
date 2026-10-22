@@ -153,7 +153,7 @@ guess = int(raw_guess)
 print("You entered:", guess)
 ```
 
-**PREDICT:** What will happen for `5`? What about `hello`?
+**PREDICT:** What will happen for `5`? What about `hello`? 5 will be a valid guess and hello will do nothing
 
 **SAVE:** Press **Ctrl+S** (Windows/Linux) or **Cmd+S** (macOS).
 
