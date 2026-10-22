@@ -1,20 +1,21 @@
 # PROG 1700 — Logic and Programming
+
 ## Workshop 04-03 — Exception Handling with `try` / `except`
 
 ### 1. Workshop Details
 
-| Field | Details |
-|---|---|
-| Course | PROG 1700 — Logic and Programming |
-| Instructor | Davis Boudreau |
-| Series | Workshop 04 — Error Handling (Part 3 of 4) |
-| Workshop | 04-03 — Exception Handling with `try` / `except` |
-| Type | Self-guided, hands-on programming |
-| Estimated time | 75–90 minutes |
-| Tools | Python 3, VS Code, Git, GitHub |
-| Prerequisite | Workshops 04-01 and 04-02 |
+| Field                | Details                                                                                                     |
+| -------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Course               | PROG 1700 — Logic and Programming                                                                          |
+| Instructor           | Davis Boudreau                                                                                              |
+| Series               | Workshop 04 — Error Handling (Part 3 of 4)                                                                 |
+| Workshop             | 04-03 — Exception Handling with `try` / `except`                                                       |
+| Type                 | Self-guided, hands-on programming                                                                           |
+| Estimated time       | 75–90 minutes                                                                                              |
+| Tools                | Python 3, VS Code, Git, GitHub                                                                              |
+| Prerequisite         | Workshops 04-01 and 04-02                                                                                   |
 | Student deliverables | Worksheet completed by all; GitHub technical evidence; Brightspace worksheet submission for absent students |
-| Evaluation | A — Attendance; P — Participation; T — Task Progress; F — Focus & Professional Conduct; R — Reflection |
+| Evaluation           | A — Attendance; P — Participation; T — Task Progress; F — Focus & Professional Conduct; R — Reflection |
 
 ---
 
@@ -85,12 +86,12 @@ except ValueError:
 
 **Important distinctions:**
 
-| Situation | Example | Correct response |
-|---|---|---|
-| Conversion exception | `int("hello")` | Catch `ValueError` |
-| Out-of-range value | `int("15")` in a 1–10 game | Use an `if` range check |
-| Correctly formatted, allowed input | `int("5")` | Continue with game logic |
-| Programming mistake | Misspelled variable name | Debug and fix the code, not suppress the error |
+| Situation                          | Example                       | Correct response                               |
+| ---------------------------------- | ----------------------------- | ---------------------------------------------- |
+| Conversion exception               | `int("hello")`              | Catch `ValueError`                           |
+| Out-of-range value                 | `int("15")` in a 1–10 game | Use an `if` range check                      |
+| Correctly formatted, allowed input | `int("5")`                  | Continue with game logic                       |
+| Programming mistake                | Misspelled variable name      | Debug and fix the code, not suppress the error |
 
 **Do not use a bare `except:` for this workshop.** Catch `ValueError` specifically so unexpected programming errors remain visible.
 
@@ -130,7 +131,6 @@ flowchart TD
    ```bash
    cd workshop_04_03_exception_handling
    ```
-
 8. Save your files with **Ctrl+S** (Windows/Linux) or **Cmd+S** (macOS).
 
 **Checkpoint:** You can see both files in the VS Code Explorer and can run a Python script from the terminal.
@@ -145,7 +145,7 @@ number = int(raw_value)
 print("Your number is:", number)
 ```
 
-1. **Predict:** What will happen for input `7`? What will happen for `hello`? Record both predictions.
+1. **Predict:** What will happen for input `7`? What will happen for `hello`? Record both predictions. 7 will work and hello will not
 2. Save the file.
 3. Run `python exception_practice.py` (or `python3 exception_practice.py`).
 4. Enter `7` and observe `Your number is: 7`.
@@ -179,7 +179,6 @@ print("The program reached the end.")
    Your number is: 7
    The program reached the end.
    ```
-
 4. For `hello`, expect:
 
    ```text
@@ -187,7 +186,6 @@ print("The program reached the end.")
    Invalid input: enter a whole number.
    The program reached the end.
    ```
-
 5. Explain in your worksheet why the last `print()` runs in both cases.
 6. **Experiment:** Enter `4.5`. Observe that `int("4.5")` also raises `ValueError`.
 
@@ -279,15 +277,15 @@ secret = 5  # Testing only
 
 Run the program and enter the following sequence, recording **expected and actual output** for every entry:
 
-| Input | Expected behaviour |
-|---|---|
-| `hello` | Whole-number error; ask again |
-| `4.5` | Whole-number error; ask again |
-| `0` | Out-of-range message; ask again |
-| `11` | Out-of-range message; ask again |
-| `3` | `Too low!`; ask again |
-| `8` | `Too high!`; ask again |
-| `5` | `You got it!`; end game |
+| Input     | Expected behaviour              |
+| --------- | ------------------------------- |
+| `hello` | Whole-number error; ask again   |
+| `4.5`   | Whole-number error; ask again   |
+| `0`     | Out-of-range message; ask again |
+| `11`    | Out-of-range message; ask again |
+| `3`     | `Too low!`; ask again         |
+| `8`     | `Too high!`; ask again        |
+| `5`     | `You got it!`; end game       |
 
 Also test the boundaries `1` and `10` in a new run. With a secret of `5`, both are allowed guesses (but incorrect), so the game should print `Too low!` or `Too high!` rather than `Out of range`.
 
@@ -322,7 +320,6 @@ except ValueError:
    except ValueError:
        print("Please enter a whole number.")
    ```
-
 6. Save and retest `hello` and `6`. Record evidence of both results.
 7. Optional VS Code debugger: set a breakpoint on `number = int(raw_value)`, start **Run and Debug → Python File**, enter `hello`, and observe where execution stops or reports the exception. Repeat with `6` and inspect `raw_value` and `number` as you step through.
 
@@ -393,13 +390,13 @@ All students must complete the required programming exercises and commit/push th
 
 ### 12. Evaluation Criteria
 
-| Criterion | Evidence |
-|---|---|
-| **A — Attendance** | Present and engaged during workshop activities, or completes the independent make-up requirements if absent |
-| **P — Participation** | Predicts results, tests multiple inputs, and investigates failures |
-| **T — Task Progress** | Completes guided exception exercises, guessing-game integration, testing, and independent challenge |
-| **F — Focus & Professional Conduct** | Works systematically, tests safely, and documents changes |
-| **R — Reflection / Exit Evidence** | Explains exception handling, range validation, and debugging decisions in the worksheet |
+| Criterion                                   | Evidence                                                                                                    |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **A — Attendance**                   | Present and engaged during workshop activities, or completes the independent make-up requirements if absent |
+| **P — Participation**                | Predicts results, tests multiple inputs, and investigates failures                                          |
+| **T — Task Progress**                | Completes guided exception exercises, guessing-game integration, testing, and independent challenge         |
+| **F — Focus & Professional Conduct** | Works systematically, tests safely, and documents changes                                                   |
+| **R — Reflection / Exit Evidence**   | Explains exception handling, range validation, and debugging decisions in the worksheet                     |
 
 ---
 
