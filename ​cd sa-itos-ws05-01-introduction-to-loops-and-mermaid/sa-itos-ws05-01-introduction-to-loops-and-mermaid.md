@@ -4,15 +4,15 @@
 
 ## 1. Workshop Details
 
-| Field | Details |
-|---|---|
-| Course | PROG 1700 — Logic and Programming |
-| Instructor | Davis Boudreau |
-| Series | Workshop 05 — Loops and Iteration (Part 1 of 4) |
-| Suggested time | 120 minutes (extend as needed for first-time Mermaid users) |
-| Format | Self-guided, hands-on workshop; instructor facilitates and joins the activities |
-| Tools | Python 3, VS Code, Markdown preview, Mermaid Live Editor (optional), Git/GitHub |
-| Workshop folder | `sa-itos-ws05-01-introduction-to-loops-and-mermaid/` |
+| Field             | Details                                                                                   |
+| ----------------- | ----------------------------------------------------------------------------------------- |
+| Course            | PROG 1700 — Logic and Programming                                                        |
+| Instructor        | Davis Boudreau                                                                            |
+| Series            | Workshop 05 — Loops and Iteration (Part 1 of 4)                                          |
+| Suggested time    | 120 minutes (extend as needed for first-time Mermaid users)                               |
+| Format            | Self-guided, hands-on workshop; instructor facilitates and joins the activities           |
+| Tools             | Python 3, VS Code, Markdown preview, Mermaid Live Editor (optional), Git/GitHub           |
+| Workshop folder   | `sa-itos-ws05-01-introduction-to-loops-and-mermaid/`                                    |
 | Required evidence | Python exercise files, two Mermaid diagrams in Markdown, completed worksheet, Git commits |
 
 ## 2. Overview
@@ -57,13 +57,13 @@ If unsure, revisit the examples from WS03 and WS04. You do not need to submit se
 
 A **loop** repeats a block of code. A `while` loop checks its condition **before each iteration**. When the condition is `False`, execution continues after the loop.
 
-| Term | Meaning | Example |
-|---|---|---|
-| Condition | Determines whether to repeat | `count < 3` |
-| Iteration | One complete pass through a loop | Printing one number |
-| Counter | Tracks how many times something happens | `count += 1` |
-| Accumulator | Builds a running result | `total += grade` |
-| Sentinel | Special input that ends repetition | `-1` means finish |
+| Term          | Meaning                                      | Example                        |
+| ------------- | -------------------------------------------- | ------------------------------ |
+| Condition     | Determines whether to repeat                 | `count < 3`                  |
+| Iteration     | One complete pass through a loop             | Printing one number            |
+| Counter       | Tracks how many times something happens      | `count += 1`                 |
+| Accumulator   | Builds a running result                      | `total += grade`             |
+| Sentinel      | Special input that ends repetition           | `-1` means finish            |
 | Infinite loop | A loop whose exit condition is never reached | Forgetting to change `count` |
 
 ### Reference pseudocode — counter-controlled loop
@@ -118,25 +118,25 @@ flowchart TD
 
 6. Save with **Ctrl+S**.
 7. Open Markdown preview with **Ctrl+Shift+V** (or Command Palette → **Markdown: Open Preview**). For side-by-side preview, use **Ctrl+K**, then **V**.
-8. Confirm you see three connected shapes. If the preview displays only code or reports an error, check the backticks, indentation, and `mermaid` label. VS Code versions/extensions can differ; if Mermaid rendering is unavailable, paste **only the diagram source** (starting at `flowchart TD`) into <https://mermaid.live/> and view the preview there.
+8. Confirm you see three connected shapes. If the preview displays only code or reports an error, check the backticks, indentation, and `mermaid` label. VS Code versions/extensions can differ; if Mermaid rendering is unavailable, paste **only the diagram source** (starting at `flowchart TD`) into [https://mermaid.live/](https://mermaid.live/) and view the preview there.
 9. **Do not paste passwords, personal records, or private student data** into an online editor. Our diagrams use only sample program logic.
 
 ### B. Understand the syntax
 
-| Mermaid text | Meaning |
-|---|---|
-| `flowchart TD` | Draw a flowchart from top to bottom |
-| `A[Action]` | Rectangle for a processing step |
-| `B{Question?}` | Diamond for a decision |
-| `C([Start or End])` | Rounded start/end node |
-| `A --> B` | Connect A to B |
-| `B -- Yes --> C` | Label an arrow Yes |
-| `sequenceDiagram` | Start a sequence diagram |
-| `actor Student` | Show a person interacting with the program |
-| `participant Program` | Show the software as a participant |
-| `Student->>Program: Enter grade` | Show a message or interaction |
-| `loop While entering grades` | Group repeated interactions |
-| `alt Valid grade` / `else Invalid grade` | Show alternative paths |
+| Mermaid text                                 | Meaning                                    |
+| -------------------------------------------- | ------------------------------------------ |
+| `flowchart TD`                             | Draw a flowchart from top to bottom        |
+| `A[Action]`                                | Rectangle for a processing step            |
+| `B{Question?}`                             | Diamond for a decision                     |
+| `C([Start or End])`                        | Rounded start/end node                     |
+| `A --> B`                                  | Connect A to B                             |
+| `B -- Yes --> C`                           | Label an arrow Yes                         |
+| `sequenceDiagram`                          | Start a sequence diagram                   |
+| `actor Student`                            | Show a person interacting with the program |
+| `participant Program`                      | Show the software as a participant         |
+| `Student->>Program: Enter grade`           | Show a message or interaction              |
+| `loop While entering grades`               | Group repeated interactions                |
+| `alt Valid grade` / `else Invalid grade` | Show alternative paths                     |
 
 **Checkpoint:** In `diagrams.md`, change `Display Hello` to `Display Welcome`, save, and confirm the preview changes. Record whether you used VS Code preview or Mermaid Live Editor in your worksheet.
 
@@ -177,12 +177,12 @@ Loop finished.
 
 Complete the missing cells in your worksheet:
 
-| Check | `count` before test | `count <= 3` | Action |
-|---|---:|---|---|
-| 1 | 1 | True | Print 1; increment |
-| 2 | 2 | ? | ? |
-| 3 | 3 | ? | ? |
-| 4 | 4 | ? | ? |
+| Check | `count` before test | `count <= 3` | Action             |
+| ----- | --------------------: | -------------- | ------------------ |
+| 1     |                     1 | True           | Print 1; increment |
+| 2     |                     2 | ?              | ?                  |
+| 3     |                     3 | ?              | ?                  |
+| 4     |                     4 | ?              | ?                  |
 
 **Checkpoint:** Explain why the loop prints three times, not four.
 
@@ -245,11 +245,11 @@ print("Number of accepted grades:", count)
 
 Run `python grade_entry.py`. Test these input sequences **one run at a time**:
 
-| Inputs | Expected result |
-|---|---|
-| `80`, `90`, `-1` | 2 accepted grades |
-| `-1` | 0 accepted grades |
-| `0`, `100`, `-1` | 2 accepted grades |
+| Inputs                          | Expected result                                   |
+| ------------------------------- | ------------------------------------------------- |
+| `80`, `90`, `-1`          | 2 accepted grades                                 |
+| `-1`                          | 0 accepted grades                                 |
+| `0`, `100`, `-1`          | 2 accepted grades                                 |
 | `101`, `-5`, `75`, `-1` | Invalid messages for 101 and -5; 1 accepted grade |
 
 **Important:** At this stage, entering text such as `hello` raises `ValueError` because `int()` cannot convert it. That is an exception-handling topic from WS04. You may apply your WS04 `try/except` skills as an optional improvement, but the required focus here is understanding loop behaviour.
@@ -346,12 +346,12 @@ Extend your Grade Entry program to calculate an average of **accepted grades onl
 
 ### Verification tests
 
-| Inputs | Expected final result |
-|---|---|
-| `80`, `90`, `-1` | Count 2; average 85.00 |
-| `0`, `100`, `-1` | Count 2; average 50.00 |
-| `101`, `70`, `-1` | Count 1; average 70.00 |
-| `-1` | No grades entered; no crash |
+| Inputs                  | Expected final result       |
+| ----------------------- | --------------------------- |
+| `80`, `90`, `-1`  | Count 2; average 85.00      |
+| `0`, `100`, `-1`  | Count 2; average 50.00      |
+| `101`, `70`, `-1` | Count 1; average 70.00      |
+| `-1`                  | No grades entered; no crash |
 
 **Challenge extension (optional):** Add a `passing_count` counter for grades of 50 or more. Test the new counter and update both diagrams to reflect the added logic.
 
@@ -404,13 +404,13 @@ sa-itos-ws05-01-introduction-to-loops-and-mermaid/
 
 ## 15. Evaluation Criteria — A/P/T/F/R
 
-| Criterion | Evidence |
-|---|---|
-| **A — Attendance** | In-class attendance or documented independent completion, as applicable |
-| **P — Participation** | Active engagement with exercises, testing, diagrams, and review |
-| **T — Task Progress** | Working Python files, trace/testing evidence, and **both Mermaid diagrams** |
-| **F — Focus & Professional Conduct** | Productive, responsible troubleshooting and appropriate collaboration |
-| **R — Reflection** | Completed worksheet and thoughtful explanation of findings |
+| Criterion                                   | Evidence                                                                          |
+| ------------------------------------------- | --------------------------------------------------------------------------------- |
+| **A — Attendance**                   | In-class attendance or documented independent completion, as applicable           |
+| **P — Participation**                | Active engagement with exercises, testing, diagrams, and review                   |
+| **T — Task Progress**                | Working Python files, trace/testing evidence, and **both Mermaid diagrams** |
+| **F — Focus & Professional Conduct** | Productive, responsible troubleshooting and appropriate collaboration             |
+| **R — Reflection**                   | Completed worksheet and thoughtful explanation of findings                        |
 
 ## 16. Completion and Exit Evidence
 
