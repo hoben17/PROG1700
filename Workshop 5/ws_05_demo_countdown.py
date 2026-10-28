@@ -1,0 +1,8 @@
+
+count = 3
+
+while count > 0:
+    print("Countdown:"), count
+    count = count - 1
+
+    print("Go!")
