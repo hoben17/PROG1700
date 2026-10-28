@@ -1,13 +1,7 @@
 
-while True:
-    try:
-        raw_value = input("Enter a whole number: ")
-        number = int(raw_value)
-        print("Accepted:", number)
-        break
-    except ValueError:
-        print("Please try again using a whole number.")
+raw_value = input("Enter a whole number: ")
 
-print("Input accepted. Continuing...")
-
-# LEFT OFF AT CHALLENGE 7
+try:
+      print("Your name is:", number)
+except ValueError:
+    print("Please enter a whole number.")
