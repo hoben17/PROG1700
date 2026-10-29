@@ -1,0 +1,18 @@
+flowchart TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+
+    A([Start])  --> B[TODO: initialize count]
+    B --> C[TODO: read first grade]
+    C --> D{TODO: sentinel test?}
+    D -- Yes --> E{TODO: valid range?}
+    E -- Yes --> F[TODO: accept grade and count it]
+    E -- No --> G[TODO: show invalid message]
+    F --> H[TODO: read next grade]
+    G --> H
+    H --> D
+    D --No --> I[TODO: display count]
+    I --> J([End])
