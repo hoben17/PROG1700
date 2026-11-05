@@ -1,23 +1,24 @@
 # PROG 1700 — Logic and Programming
+
 # Workshop 05-03 — Iterating Through Strings and Lists
 
-**Workshop Series 05: Loops, Iteration and Data Structures**  
+**Workshop Series 05: Loops, Iteration and Data Structures**
 **Part 3 of 7 — Integrated Tutorial and Practical Workshop**
 
 ---
 
 ## 1. Workshop Details
 
-| Field | Details |
-|---|---|
-| **Course** | PROG 1700 — Logic and Programming |
-| **Instructor** | Davis Boudreau |
-| **Workshop** | WS05-03 — Iterating Through Strings and Lists |
-| **Estimated Time** | 180–240 minutes, approximately two instructional sessions |
-| **Delivery** | Self-guided, instructor-facilitated |
-| **Tools** | Python 3, VS Code, Git, GitHub, Mermaid |
+| Field                       | Details                                                    |
+| --------------------------- | ---------------------------------------------------------- |
+| **Course**            | PROG 1700 — Logic and Programming                         |
+| **Instructor**        | Davis Boudreau                                             |
+| **Workshop**          | WS05-03 — Iterating Through Strings and Lists             |
+| **Estimated Time**    | 180–240 minutes, approximately two instructional sessions |
+| **Delivery**          | Self-guided, instructor-facilitated                        |
+| **Tools**             | Python 3, VS Code, Git, GitHub, Mermaid                    |
 | **Workshop Filename** | `sa-itos-ws05-03-iterating-through-strings-and-lists.md` |
-| **Exercise Folder** | `ws05-03-iterating-through-strings-and-lists` |
+| **Exercise Folder**   | `ws05-03-iterating-through-strings-and-lists`            |
 
 ---
 
@@ -277,13 +278,13 @@ A data structure organizes information.
 
 Python includes several built-in collection types.
 
-| Structure | Example | Characteristics |
-|---|---|---|
-| String | `"Alex"` | Ordered, immutable text sequence |
-| List | `[80, 90, 70]` | Ordered, mutable collection |
-| Tuple | `(80, 90, 70)` | Ordered, immutable collection |
-| Set | `{80, 90, 70}` | Collection of unique values |
-| Dictionary | `{"Alex": 85}` | Key-value collection |
+| Structure  | Example          | Characteristics                  |
+| ---------- | ---------------- | -------------------------------- |
+| String     | `"Alex"`       | Ordered, immutable text sequence |
+| List       | `[80, 90, 70]` | Ordered, mutable collection      |
+| Tuple      | `(80, 90, 70)` | Ordered, immutable collection    |
+| Set        | `{80, 90, 70}` | Collection of unique values      |
+| Dictionary | `{"Alex": 85}` | Key-value collection             |
 
 You will study strings and lists in this workshop.
 
@@ -317,12 +318,12 @@ Why would a list be more appropriate than a string for storing multiple numeric 
 
 CRUD represents four fundamental operations used to manage information.
 
-| Operation | Meaning | Student Records Example |
-|---|---|---|
-| **Create** | Add new information | Add a student |
-| **Read** | Retrieve information | Display a student |
-| **Update** | Modify information | Correct a student name |
-| **Delete** | Remove information | Remove a student |
+| Operation        | Meaning              | Student Records Example |
+| ---------------- | -------------------- | ----------------------- |
+| **Create** | Add new information  | Add a student           |
+| **Read**   | Retrieve information | Display a student       |
+| **Update** | Modify information   | Correct a student name  |
+| **Delete** | Remove information   | Remove a student        |
 
 CRUD is not exclusive to databases.
 
@@ -621,7 +622,6 @@ Explore how strings store characters and how loops process them.
 3. Create the folder:
 
    `ws05-03-iterating-through-strings-and-lists`
-
 4. Create `string_explorer.py`.
 5. Open the integrated terminal.
 
@@ -638,10 +638,10 @@ for character in name:
 
 Before running:
 
-- How many times will the loop execute?
-- What is the first character displayed?
-- What is the last character displayed?
-- Does the loop require an explicit counter?
+- How many times will the loop execute? 9 because thats the amount of letters
+- What is the first character displayed? a
+- What is the last character displayed? r
+- Does the loop require an explicit counter? yes
 
 ### Step 3 — Implement
 
@@ -818,15 +818,15 @@ Alex Smith
 
 Common string methods:
 
-| Method | Purpose |
-|---|---|
-| `strip()` | Remove surrounding whitespace |
-| `lower()` | Convert to lowercase |
-| `upper()` | Convert to uppercase |
-| `title()` | Apply title capitalization |
+| Method        | Purpose                           |
+| ------------- | --------------------------------- |
+| `strip()`   | Remove surrounding whitespace     |
+| `lower()`   | Convert to lowercase              |
+| `upper()`   | Convert to uppercase              |
+| `title()`   | Apply title capitalization        |
 | `replace()` | Return a string with replacements |
-| `find()` | Find a substring position |
-| `count()` | Count occurrences |
+| `find()`    | Find a substring position         |
+| `count()`   | Count occurrences                 |
 
 These methods return results rather than changing the original string object in place.
 
@@ -886,11 +886,11 @@ Alex
 
 ### CRUD Summary — Strings
 
-| CRUD | Technique |
-|---|---|
+| CRUD   | Technique                                   |
+| ------ | ------------------------------------------- |
 | Create | String literals, `input()`, concatenation |
-| Read | Indexing, slicing, iteration |
-| Update | Construct a replacement string |
+| Read   | Indexing, slicing, iteration                |
+| Update | Construct a replacement string              |
 | Delete | Construct a string without unwanted content |
 
 ---
@@ -1523,18 +1523,18 @@ Expected output:
 
 ### List CRUD Reference
 
-| Operation | Python Technique |
-|---|---|
-| Create list | `[]` |
-| Add to end | `append()` |
-| Insert element | `insert()` |
-| Read element | `list[index]` |
-| Read slice | `list[start:stop]` |
-| Update element | `list[index] = value` |
-| Remove by value | `remove()` |
-| Remove by index | `pop()` |
-| Delete by index | `del` |
-| Remove everything | `clear()` |
+| Operation         | Python Technique        |
+| ----------------- | ----------------------- |
+| Create list       | `[]`                  |
+| Add to end        | `append()`            |
+| Insert element    | `insert()`            |
+| Read element      | `list[index]`         |
+| Read slice        | `list[start:stop]`    |
+| Update element    | `list[index] = value` |
+| Remove by value   | `remove()`            |
+| Remove by index   | `pop()`               |
+| Delete by index   | `del`                 |
+| Remove everything | `clear()`             |
 
 ---
 
@@ -1765,12 +1765,12 @@ Lowest: 30
 Complete the following table:
 
 | Iteration | Grade | Running Total | Pass Count | Fail Count |
-|---|---:|---:|---:|---:|
-| 1 | 80 | | | |
-| 2 | 45 | | | |
-| 3 | 90 | | | |
-| 4 | 30 | | | |
-| 5 | 60 | | | |
+| --------- | ----: | ------------: | ---------: | ---------: |
+| 1         |    80 |               |            |            |
+| 2         |    45 |               |            |            |
+| 3         |    90 |               |            |            |
+| 4         |    30 |               |            |            |
+| 5         |    60 |               |            |            |
 
 ### Step 5 — Test an Empty List
 
@@ -1860,13 +1860,13 @@ You will investigate nested collections later in WS05-06.
 
 ## 15.2 Common List Errors
 
-| Error | Cause | Prevention |
-|---|---|---|
-| `IndexError` | Invalid index | Check bounds |
-| `ValueError` | Removing missing value | Check membership |
-| `TypeError` | Incorrect operation | Verify types |
-| `ZeroDivisionError` | Average of empty list | Check length |
-| Logical error | Updating loop variable instead of list | Use index assignment |
+| Error                 | Cause                                  | Prevention           |
+| --------------------- | -------------------------------------- | -------------------- |
+| `IndexError`        | Invalid index                          | Check bounds         |
+| `ValueError`        | Removing missing value                 | Check membership     |
+| `TypeError`         | Incorrect operation                    | Verify types         |
+| `ZeroDivisionError` | Average of empty list                  | Check length         |
+| Logical error         | Updating loop variable instead of list | Use index assignment |
 
 ## 15.3 Modifying Lists During Iteration
 
@@ -2487,22 +2487,22 @@ Create:
 
 Use this table:
 
-| Test ID | Operation | Expected Result | Actual Result | Pass/Fail |
-|---|---|---|---|---|
-| S01 | Create string | String stored | | |
-| S02 | Read character | Correct character | | |
-| S03 | Update string | New string created | | |
-| S04 | Delete character | New shorter string | | |
-| L01 | Create list | List created | | |
-| L02 | Read element | Correct element | | |
-| L03 | Update element | Value replaced | | |
-| L04 | Delete element | Value removed | | |
-| L05 | Invalid index | Rejected safely | | |
-| L06 | Empty list | Handled safely | | |
-| L07 | Invalid grade | Rejected | | |
-| L08 | Non-numeric input | Handled safely | | |
-| L09 | Grade statistics | Correct results | | |
-| L10 | Exit | Program terminates | | |
+| Test ID | Operation         | Expected Result    | Actual Result | Pass/Fail |
+| ------- | ----------------- | ------------------ | ------------- | --------- |
+| S01     | Create string     | String stored      |               |           |
+| S02     | Read character    | Correct character  |               |           |
+| S03     | Update string     | New string created |               |           |
+| S04     | Delete character  | New shorter string |               |           |
+| L01     | Create list       | List created       |               |           |
+| L02     | Read element      | Correct element    |               |           |
+| L03     | Update element    | Value replaced     |               |           |
+| L04     | Delete element    | Value removed      |               |           |
+| L05     | Invalid index     | Rejected safely    |               |           |
+| L06     | Empty list        | Handled safely     |               |           |
+| L07     | Invalid grade     | Rejected           |               |           |
+| L08     | Non-numeric input | Handled safely     |               |           |
+| L09     | Grade statistics  | Correct results    |               |           |
+| L10     | Exit              | Program terminates |               |           |
 
 ## 19.2 Debugging Procedure
 
@@ -2626,13 +2626,13 @@ Commit and push the completed files to GitHub.
 
 The workshop uses the standard A/P/T/F/R criteria.
 
-| Criterion | Description |
-|---|---|
-| **A — Attendance** | Attendance at the scheduled workshop |
-| **P — Participation** | Active engagement in tutorial and practical activities |
-| **T — Task Progress** | Completion of programming, CRUD, debugging, and diagram activities |
-| **F — Focus & Professional Conduct** | Productive work habits and professional conduct |
-| **R — Reflection** | Worksheet observations, testing, debugging, and reflection |
+| Criterion                                   | Description                                                        |
+| ------------------------------------------- | ------------------------------------------------------------------ |
+| **A — Attendance**                   | Attendance at the scheduled workshop                               |
+| **P — Participation**                | Active engagement in tutorial and practical activities             |
+| **T — Task Progress**                | Completion of programming, CRUD, debugging, and diagram activities |
+| **F — Focus & Professional Conduct** | Productive work habits and professional conduct                    |
+| **R — Reflection**                   | Worksheet observations, testing, debugging, and reflection         |
 
 ---
 
