@@ -1,9 +1,7 @@
 # Grade Processor Srquence Diagram
 
-
-
 ```
-mermaid
+mermaideddddds
 sequenceDiagram
 	actor Instructor
     participent Program
